@@ -18,7 +18,37 @@ const blog = props => {
 export default blog;
 
 const Container = styled.div`
-  width: 300px;
-  height: 200px;
-  background-color: #f3f3f3;
+  width: 250px;
+  height: 250px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 50px;
+
+  .img {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+      cursor: pointer;
+
+      :hover {
+        transition: 0.3s ease;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .text {
+    padding: 5px;
+  }
+  .title {
+    text-align: right;
+    font-size: 16px;
+  }
+  .date {
+    font-size: 11px;
+  }
 `;
