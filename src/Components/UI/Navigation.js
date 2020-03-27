@@ -33,7 +33,7 @@ const Container = styled.div`
     list-style: none;
 
     li {
-      font-size: 18px;
+      font-size: 17px;
       color: white;
     }
   }
