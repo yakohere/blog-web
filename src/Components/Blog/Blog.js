@@ -47,6 +47,7 @@ const Container = styled.div`
   .title {
     text-align: right;
     font-size: 16px;
+    font-weight: bold;
   }
   .date {
     font-size: 11px;

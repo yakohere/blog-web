@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import blogsData from "../../static/blogsData";
+import articlesData from "../../static/articlesData";
 import Article from "../Article/Article";
 import styled from "styled-components";
 
@@ -7,12 +7,15 @@ class Articles extends Component {
   render() {
     return (
       <Container>
-        <a>
-          <a className="letter-b">A</a>rticles
-        </a>
+        <a>Articles</a>
         <div className="articles">
-          {blogsData.map(data => (
-            <Article img={data.img} title={data.title} date={data.date} />
+          {articlesData.map(data => (
+            <Article
+              img={data.img}
+              title={data.title}
+              date={data.date}
+              article={data.article}
+            />
           ))}
         </div>
       </Container>
@@ -35,18 +38,26 @@ const Container = styled.div`
     width: 70%;
     display: flex;
     flex-direction: column;
+    @media screen {
+    }
   }
 
   a {
     align-self: center;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    color: white;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      rgba(96, 179, 184, 0.88) 11.29%,
+      #985de3 100%
+    );
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
 
-    .letter-b {
-      font-size: 30px;
-      color: #60b3b8;
-      font-weight: bolder;
-      text-decoration: underline;
-    }
+    border-top-right-radius: 10px;
   }
 `;

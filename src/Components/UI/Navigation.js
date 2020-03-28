@@ -5,10 +5,10 @@ const navigation = props => {
   return (
     <Container>
       <div className="nav">
-        <a>BLOGS</a>
-        <a>ARTICLES</a>
-        <a>MOTIVATIONS</a>
-        <a>ABOUT</a>
+        <a>Blogs</a>
+        <a>Articles</a>
+        <a>Motivations</a>
+        <a>About</a>
       </div>
     </Container>
   );
@@ -21,7 +21,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   z-index: 400;
-  font-family: "Baloo 2", cursive;
+
+  font-family: "Montserrat", sans-serif;
   padding: 10px;
   box-sizing: border-box;
   .nav {
@@ -32,6 +33,12 @@ const Container = styled.div`
       width: 100%;
     }
     a {
+      border-radius: 10px;
+      background-color: #985de3;
+      padding: 5px;
+      color: white;
+      width: 100px;
+      text-align: center;
     }
   }
 `;

@@ -10,6 +10,7 @@ const article = props => {
       <div className="text">
         <div className="title">{props.title}</div>
         <div className="date">{props.date}</div>
+        <div className="article">{props.article}</div>
       </div>
     </Container>
   );
@@ -19,15 +20,14 @@ export default article;
 
 const Container = styled.div`
   width: 100%;
-  height: 200px;
+  height: 130px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   display: flex;
   overflow: hidden;
   border: 1px solid grey;
   .img {
-    width: 300px;
-    height: 200px;
+    width: 25%;
     overflow: hidden;
 
     img {
@@ -44,13 +44,17 @@ const Container = styled.div`
     }
   }
   .text {
+    width: 75%;
     padding: 5px;
   }
   .title {
-    text-align: right;
     font-size: 16px;
+    font-weight: bold;
   }
   .date {
     font-size: 11px;
+  }
+  .article {
+    font-size: 15px;
   }
 `;
