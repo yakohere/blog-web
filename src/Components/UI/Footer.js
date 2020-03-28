@@ -6,7 +6,7 @@ const footer = () => {
     <Container>
       <div className="footer">
         <div className="notify">
-          Subscribe our news letter.
+          Subscribe to our news letter.
           <input type="text" placeholder="Input your e-mail!" />
           <button type="submit">Submit</button>
         </div>
@@ -50,7 +50,7 @@ const Container = styled.div`
       width: 50%;
       color: #7b7b7b;
       font-size: 15px;
-
+      text-align: center;
       box-sizing: border-box;
       @media screen and (max-width: 728px) {
         width: 100%;
