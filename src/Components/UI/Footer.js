@@ -8,6 +8,7 @@ const footer = () => {
         <div className="notify">
           Subscribe our news letter.
           <input type="text" placeholder="Input your e-mail!" />
+          <button type="submit">Submit</button>
         </div>
         <hr style={{ width: "100px" }} />
         <div className="quick-nav">
@@ -48,8 +49,9 @@ const Container = styled.div`
     .notify {
       width: 50%;
       color: #7b7b7b;
-      align-items: center;
       font-size: 15px;
+
+      box-sizing: border-box;
       @media screen and (max-width: 728px) {
         width: 100%;
         display: flex;
@@ -59,9 +61,24 @@ const Container = styled.div`
       input {
         padding: 5px;
         font-family: "Montserrat", sans-serif;
+        margin-bottom: 5px;
         @media screen and (max-width: 728px) {
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
+      }
+      button {
+        padding: 8px;
+        width: 100px;
+        align-self: center;
+        color: white;
+        border: transparent;
+        border-radius: 5px;
+        background: linear-gradient(
+          90deg,
+          rgba(137, 51, 248, 0.88) 0%,
+          #f28181 92.41%
+        );
+        box-sizing: border-box;
       }
     }
 

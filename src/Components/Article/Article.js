@@ -25,7 +25,7 @@ const Container = styled.div`
   margin-bottom: 20px;
   display: flex;
   overflow: hidden;
-  border: 1px solid grey;
+  border: 1px solid #c3c3c3;
   .img {
     width: 25%;
     overflow: hidden;
@@ -57,5 +57,6 @@ const Container = styled.div`
   }
   .article {
     font-size: 15px;
+    font-family: "Open Sans", sans-serif;
   }
 `;
