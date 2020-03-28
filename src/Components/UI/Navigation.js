@@ -21,23 +21,26 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   z-index: 400;
-
   font-family: "Montserrat", sans-serif;
   padding: 10px;
   box-sizing: border-box;
   .nav {
     width: 50%;
     display: flex;
+    background: linear-gradient(
+      180deg,
+      rgba(96, 179, 184, 0.88) 11.29%,
+      #985de3 100%
+    );
+    padding: 5px;
     justify-content: space-around;
+    border-radius: 10px;
     @media screen and (max-width: 728px) {
       width: 100%;
     }
     a {
       border-radius: 10px;
-      background-color: #985de3;
-      padding: 5px;
       color: white;
-      width: 100px;
       text-align: center;
     }
   }
