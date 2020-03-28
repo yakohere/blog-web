@@ -9,6 +9,7 @@ const footer = () => {
           Subscribe our news letter.
           <input type="text" placeholder="Input your e-mail!" />
         </div>
+        <hr style={{ width: "100px" }} />
         <div className="quick-nav">
           <a>Blogs</a>
           <a>Articles</a>
@@ -64,6 +65,14 @@ const Container = styled.div`
       }
     }
 
+    hr {
+      @media screen and (max-width: 1928px) {
+        display: none;
+      }
+      @media screen and (max-width: 728px) {
+        display: flex;
+      }
+    }
     .quick-nav {
       width: 50%;
       display: flex;
