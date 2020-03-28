@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const navigation = props => {
+const navigation = () => {
   return (
     <Container>
       <div className="nav">
@@ -27,14 +27,18 @@ const Container = styled.div`
   .nav {
     width: 50%;
     display: flex;
+
     background: linear-gradient(
       180deg,
-      rgba(96, 179, 184, 0.88) 11.29%,
-      #985de3 100%
+      rgba(156, 85, 248, 0.88) 11.29%,
+      #ed9999 100%
     );
+
     padding: 5px;
+    display: flex;
     justify-content: space-around;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     @media screen and (max-width: 728px) {
       width: 100%;
     }
