@@ -17,24 +17,23 @@ const navigation = props => {
 export default navigation;
 
 const Container = styled.div`
-  top: 0px;
-  left: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
-  position: fixed;
   z-index: 400;
   font-family: "Baloo 2", cursive;
-  background-color: rgba(0, 0, 0, 0.3);
   ul {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     list-style: none;
+    @media screen and (max-width: 728px) {
+      width: 100%;
+    }
 
     li {
       font-size: 17px;
-      color: white;
+      color: black;
     }
   }
 `;
