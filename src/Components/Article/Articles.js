@@ -38,7 +38,7 @@ const Container = styled.div`
     width: 70%;
     display: flex;
     flex-direction: column;
-    @media screen {
+    @media screen and (max-width: 728px) {
       width: 95%;
     }
   }
@@ -58,7 +58,9 @@ const Container = styled.div`
     );
     margin-bottom: 10px;
     border-top-left-radius: 10px;
-
     border-top-right-radius: 10px;
+    @media screen and (max-width: 728px) {
+      width: 95%;
+    }
   }
 `;
