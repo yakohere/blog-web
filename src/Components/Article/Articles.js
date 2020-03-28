@@ -39,7 +39,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 728px) {
-      width: 95%;
+      width: 100%;
     }
   }
 
@@ -60,7 +60,7 @@ const Container = styled.div`
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     @media screen and (max-width: 728px) {
-      width: 95%;
+      width: 100%;
     }
   }
 `;

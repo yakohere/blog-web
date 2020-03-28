@@ -38,6 +38,7 @@ const Container = styled.div`
       :hover {
         transition: 0.3s ease;
         transform: scale(1.1);
+        opacity: 0.8;
       }
     }
   }
