@@ -75,6 +75,9 @@ const Container = styled.div`
       width: 50%;
       display: flex;
       justify-content: center;
+      @media screen and (max-width: 428px) {
+        width: 100%;
+      }
       img {
         width: 50%;
         @media screen and (max-width: 728px) {
