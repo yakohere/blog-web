@@ -72,7 +72,6 @@ const Container = styled.div`
     }
     font-family: "Montserrat", sans-serif;
     .author-img {
-      background-color: black;
       width: 30%;
       display: flex;
       justify-content: center;
@@ -83,7 +82,7 @@ const Container = styled.div`
         width: 100%;
         @media screen and (max-width: 728px) {
           width: 50%;
-          height: auto;
+          height: 50%;
         }
       }
     }
