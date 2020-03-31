@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const navigation = () => {
   return (
     <Container>
       <div className="nav">
-        <a>Blogs</a>
-        <a>Articles</a>
-        <a>Motivations</a>
-        <a>About</a>
+        <NavLink to="/blogs">Blogs</NavLink>
+        <NavLink to="/blogs">Articles</NavLink>
+        <NavLink to="/blogs">Motivations</NavLink>
+        <NavLink to="/blogs">About</NavLink>
       </div>
     </Container>
   );
